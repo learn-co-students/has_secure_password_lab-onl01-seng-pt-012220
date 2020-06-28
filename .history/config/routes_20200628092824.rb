@@ -3,6 +3,6 @@ Rails.application.routes.draw do
   post '/login', to: 'sessions#create'
   post '/logout', to: 'sessions#destroy'
   get '/users/new', to: 'users#new'
-  post '/users', to: 'users#create'
+  post '/users', to: 'welcome#home'
   get '/welcome', to: 'welcome#home'
 end
